@@ -1,0 +1,365 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(23, 51, 70);
+  color: aliceblue;
+  font-family: cursive;
+}
+
+nav {
+  display: flex;
+  background-color: inherit;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px #00a2d3;
+  gap: 20%;
+  margin-bottom: 2%;
+}
+.logo {
+  font-size: x-large;
+  font-weight: bolder;
+}
+nav ul {
+  list-style: none;
+  color: inherit;
+  display: flex;
+  gap: 10%;
+  font-size: large;
+}
+nav ul a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  background: transparent;
+  border-radius: 10% 10% 0 0;
+}
+#intro {
+  background-color: rgba(23, 51, 70, 0.8);
+  border-radius: 2%;
+  align-items: center;
+  height: auto;
+}
+#intro img {
+  right: 0;
+  width: 50vw;
+  z-index: -1;
+  border: none;
+  border-radius: 2%;
+  position: absolute;
+  height: inherit;
+  mix-blend-mode: color-burn;
+}
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15%;
+  padding-bottom: 5%;
+}
+.intro-content button {
+  color: #00a2d3;
+  background-color: transparent;
+  border: none;
+  box-shadow: 0 0 2px #00a2d3;
+  font-family: fantasy;
+  width: 30vw;
+  margin-top: 5%;
+  border-radius: 2%;
+}
+.intro-content h1 {
+  font-weight: bolder;
+  font-size: xx-large;
+}
+.intro-content p {
+  font-size: large;
+  font-weight: bold;
+}
+.fade-in {
+  border-radius: 10% 10% 0 0;
+  box-shadow: 5px 0 5px #00a2d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  background-color: rgba(23, 51, 70, 0.8);
+}
+#fade-in-back {
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  mix-blend-mode: color-burn;
+  align-self: center;
+  position: absolute;
+}
+
+.card {
+  text-align: center;
+  align-self: center;
+  width: 80vw;
+  height: auto;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  overflow: hidden;
+}
+.card h1 {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.card p {
+  font-size: large;
+  font-weight: bold;
+}
+.card a {
+  text-decoration: none;
+  color: #00a2d3;
+  text-decoration: underline;
+  font-family: cursive;
+}
+
+#bio {
+  height: auto;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  align-self: self-start;
+  background-color: transparent;
+}
+#bio-img {
+  height: inherit;
+  width: 30vw;
+  border-radius: 30% 0 0 0;
+  margin-left: 2%;
+  mix-blend-mode: difference;
+}
+.bio-content {
+  display: flex;
+  padding-left: 5%;
+  flex-direction: column;
+  justify-content: left;
+  overflow: hidden;
+}
+
+#skills {
+  display: flex;
+  margin-left: 20%;
+  height: auto;
+  padding-bottom: 10%;
+  box-shadow: 5px 0 5px #00a2d3;
+  border-radius: 0 0 80% 0;
+  align-items: center;
+}
+#skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+}
+.skill {
+  width: 30vw;
+}
+.skill-progress {
+  background-color: rgb(3, 11, 17);
+  width: 20vw;
+  border-radius: 20px;
+  height: 1vh;
+}
+.skill-bar {
+  background-color: #cef2fd;
+  width: 15vw;
+  height: 1vh;
+}
+#education {
+  align-self: self-start;
+  box-shadow: 3px 4px 1px #00a2d3;
+  border-radius: 0 0 80% 0;
+  height: auto;
+  padding-bottom: 10%;
+}
+#education-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3%;
+  text-align: left;
+  padding-left: 5%;
+}
+.program .inst {
+  font-size: medium;
+  font-weight: lighter;
+}
+
+#languages {
+  box-shadow: 5px 5px 1px #00a2d3;
+  border-radius: 0 0 0 80%;
+  height: auto;
+  padding-bottom: 5%;
+}
+#languages-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: right;
+}
+.language {
+  width: 25%;
+}
+.language img {
+  width: 25%;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+#projects {
+  width: 100vw;
+  height: auto;
+  align-self: self-start;
+}
+#projects-content {
+  display: flex;
+  gap: 2%;
+  width: 95vw;
+  overflow: auto;
+}
+.project {
+  height: 45vh;
+  width: 30vw;
+}
+.project:hover {
+  transform: scale(1.1);
+  transition: 1s ease-out;
+}
+.project img {
+  height: 25vh;
+  width: inherit;
+}
+::-webkit-scrollbar {
+  height: 8px;
+  background-color: rgb(19, 47, 66);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #00a2d3;
+  border-radius: 50%;
+}
+#contacts {
+  height: auto;
+  padding-bottom: 10%;
+}
+#contacts-content {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+#contacts a {
+  font-weight: lighter;
+  font-family: cursive;
+  font-size: medium;
+}
+.icon {
+  flex-shrink: 0;
+  width: 25%;
+}
+#contacts-content img {
+  border-radius: 50%;
+  height: 10vh;
+}
+footer {
+  bottom: 0;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+#footer-content a {
+  text-decoration: none;
+  margin: 10px;
+  color: #00a2d3;
+}
+
+@media (max-width: 600px) {
+  nav {
+    width: 100vw;
+    display: flex;
+    background-color: black;
+    justify-content: left;
+    gap: 5%;
+  }
+  nav ul {
+    width: auto;
+    gap: 1%;
+    background-color: aqua;
+  }
+  nav ul a {
+    width: auto;
+  }
+}
+
+/* Fade-in and slide-up animation */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+}
+.fade-in-section:nth-child(1) {
+  transition-delay: 0.3s;
+}
+.fade-in-section:nth-child(2) {
+  transition-delay: 0.5s;
+}
+.fade-in-section:nth-child(3) {
+  transition-delay: 0.7s;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCaret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #fff;
+  width: 0;
+  visibility: hidden;
+}
+
+.typewriter.animate {
+  visibility: visible;
+  animation: typewriter 2.5s steps(40, end) forwards,
+    blinkCaret 0.75s step-end infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCaret {
+  50% {
+    border-color: transparent;
+  }
+}
