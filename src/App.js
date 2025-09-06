@@ -24,34 +24,39 @@ export default function App() {
       </nav>
       <FadeInSection>
         <main>
-          <section id="intro">
-            <img src="profile2.jpg" alt="profile" />
-            <div className="intro-content">
-              <TypewriterOnScroll text="Welcome to my Portfolio 👋" />
-              <p>
-                Hi there! i'm a passionate computer Scientist and programming
-                ethusiast <br /> with a talent for building meaningful solutions
-                through code. <br />
-                From crafting sleek, responsive websites to stimulating
-                enterprise-grade <br /> network topologies, I blend creativity
-                with logic to bring ideas to life. <br />
-                In this space, you will find a showcase of my Projects, skills,
-                nad technical explorations. <br />
-                From algorithm development and dynamic routing setups to
-                visually striking web designs. <br />
-                Whether it's behind-the-scenes logic or front-end-elegance, i
-                thrive on solving problems and pushing boundaries.
-              </p>
-              <button type="button">Download Resume</button>
-            </div>
-          </section>
+          <FadeInSection>
+            <section id="intro">
+              <img src="images/profile3.jpeg" alt="profile" />
+              <div className="intro-content">
+                <TypewriterOnScroll text="Welcome to my Portfolio 👋" />
+                <p>
+                  Hi there! i'm a passionate computer Scientist and programming
+                  ethusiast <br /> with a talent for building meaningful
+                  solutions through code. <br />
+                  From crafting sleek, responsive websites to stimulating
+                  enterprise-grade <br /> network topologies, I blend creativity
+                  with logic to bring ideas to life. <br />
+                  In this space, you will find a showcase of my Projects,
+                  skills, nad technical explorations. <br />
+                  From algorithm development and dynamic routing setups to
+                  visually striking web designs. <br />
+                  Whether it's behind-the-scenes logic or front-end-elegance, i
+                  thrive on solving problems and pushing boundaries.
+                </p>
+                <button type="button">Download Resume</button>
+              </div>
+            </section>
+          </FadeInSection>
           <section id="summary" className="fade-in">
-            <FadeInSection>
-              <img src="profile2.jpg" alt="background" id="fade-in-back" />
-            </FadeInSection>
+            <img
+              src="images/profile2.jpeg"
+              alt="background"
+              id="fade-in-back"
+            />
+
             <FadeInSection>
               <div id="bio" className="card">
-                <img src="profile1.jpg" alt="image" id="bio-img" />
+                <img src="images/profile1.jpeg" alt="image" id="bio-img" />
                 <div className="bio-content">
                   <TypewriterOnScroll text="Bio" />
                   <p>
@@ -123,31 +128,31 @@ export default function App() {
                 <div id="languages-content">
                   <div className="language">
                     <p>python</p>
-                    <img src="profile1.jpg" alt="icon" />
+                    <img src="images/profile1.jpeg" alt="icon" />
                   </div>
                   <div className="language">
                     <p>Javascript</p>
-                    <img src="profile1.jpg" alt="icon" />
+                    <img src="images/profile1.jpeg" alt="icon" />
                   </div>
                   <div className="language">
                     <p>HtML</p>
-                    <img src="profile1.jpg" alt="icon" />
+                    <img src="images/profile1.jpeg" alt="icon" />
                   </div>
                   <div className="language">
                     <p>CSS</p>
-                    <img src="profile1.jpg" alt="icon" />
+                    <img src="images/profile1.jpeg" alt="icon" />
                   </div>
                   <div className="language">
                     <p>Java</p>
-                    <img src="profile1.jpg" alt="icon" />
+                    <img src="images/profile1.jpeg" alt="icon" />
                   </div>
                   <div className="language">
                     <p>C++</p>
-                    <img src="profile1.jpg" alt="icon" />
+                    <img src="images/profile1.jpeg" alt="icon" />
                   </div>
                   <div className="language">
                     <p>Reactjs</p>
-                    <img src="profile1.jpg" alt="icon" />
+                    <img src="images/profile1.jpeg" alt="icon" />
                   </div>
                 </div>
                 <a href="Languages.html" className="btn">
@@ -196,27 +201,27 @@ export default function App() {
                 <div id="projects-content">
                   <div id="project-1" className="project">
                     <p>OSPF,MD5 auth, redudancy</p>
-                    <img src="profile3.jpg" alt="dashbord" />
+                    <img src="images/profile3.jpeg" alt="dashbord" />
                     <a href="Visit Project">Visit Project</a>
                   </div>
                   <div id="project-1" className="project">
                     <p>OSPF,MD5 auth, redudancy</p>
-                    <img src="profile3.jpg" alt="dashbord" />
+                    <img src="images/profile3.jpeg" alt="dashbord" />
                     <a href="Visit Project">Visit Project</a>
                   </div>
                   <div id="project-2" className="project">
                     <p>OSPF,MD5 auth, redudancy</p>
-                    <img src="profile3.jpg" alt="dashbord" />
+                    <img src="images/profile3.jpeg" alt="dashbord" />
                     <a href="Visit Project">Visit Project</a>
                   </div>
                   <div id="project-3" className="project">
                     <p>OSPF,MD5 auth, redudancy</p>
-                    <img src="profile3.jpg" alt="dashbord" />
+                    <img src="images/profile3.jpeg" alt="dashbord" />
                     <a href="Visit Project">Visit Project</a>
                   </div>
                   <div id="project-4" className="project">
                     <p>OSPF,MD5 auth, redudancy</p>
-                    <img src="profile3.jpg" alt="dashbord" />
+                    <img src="images/profile3.jpeg" alt="dashbord" />
                     <a href="Visit Project">Visit Project</a>
                   </div>
                 </div>
@@ -229,31 +234,31 @@ export default function App() {
 
                 <div id="contacts-content">
                   <div className="icon">
-                    <img src="profile1.jpg" alt=" facebook" />
+                    <img src="images/profile1.jpeg" alt=" facebook" />
                     <p>
                       <a href="facebook.com">Facebook</a>
                     </p>
                   </div>
                   <div className="icon">
-                    <img src="profile1.jpg" alt=" twitter" />
+                    <img src="images/profile1.jpeg" alt=" twitter" />
                     <p>
                       <a href="twiter.com">twitter</a>
                     </p>
                   </div>
                   <div className="icon">
-                    <img src="profile1.jpg" alt=" linkedin" />
+                    <img src="images/profile1.jpeg" alt=" linkedin" />
                     <p>
                       <a href="linkedin.com">linkedin</a>
                     </p>
                   </div>
                   <div className="icon">
-                    <img src="profile1.jpg" alt=" instagram" />
+                    <img src="images/profile1.jpeg" alt=" instagram" />
                     <p>
                       <a href="instagram.com">instagram</a>
                     </p>
                   </div>
                   <div className="icon">
-                    <img src="profile1.jpg" alt=" whatsapp" />
+                    <img src="images/profile1.jpeg" alt=" whatsapp" />
                     <p>
                       <a href="whatsapp.com">whatsapp</a>
                     </p>

@@ -52,7 +52,8 @@ section {
   border: none;
   border-radius: 2%;
   position: absolute;
-  height: inherit;
+  opacity: 0.5;
+  height: 100vh;
   mix-blend-mode: color-burn;
 }
 .intro-content {
@@ -80,8 +81,8 @@ section {
   font-weight: bold;
 }
 .fade-in {
-  border-radius: 10% 10% 0 0;
-  box-shadow: 5px 0 5px #00a2d3;
+  border-radius: 10% 0 0 0;
+  box-shadow: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
