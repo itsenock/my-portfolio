@@ -300,8 +300,8 @@ footer {
 /* Fade-in and slide-up animation */
 .fade-in-section {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transform: translateY(50px);
+  transition: opacity 3s ease-out, transform 3.5s ease-out;
   will-change: opacity, transform;
 }
 
@@ -317,6 +317,12 @@ footer {
 }
 .fade-in-section:nth-child(3) {
   transition-delay: 0.7s;
+}
+.fade-in-section:nth-child(4) {
+  transition-delay: 0.9s;
+}
+.fade-in-section:nth-child(5) {
+  transition-delay: 1.1s;
 }
 
 @keyframes typewriter {
