@@ -1,22 +1,81 @@
 #languages {
-    padding: 2rem;
-    box-shadow: 5px 5px 1px #00a2d3;
-    border-radius: 0 0 0 80%;
+  padding: 3rem 5%;
+  background-color: transparent;
+  box-shadow: 0 8px 24px rgba(0, 162, 211, 0.3); /* Soft, elegant shadow */
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Grid layout */
+.languages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 900px;
+  justify-items: center;
+}
+
+/* Individual language card */
+.language {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.language:hover {
+  transform: translateY(-5px);
+}
+
+.language img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+/* Text styling */
+.language p {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Footer button */
+.languages-footer {
+  margin-top: 2rem;
+}
+
+.btn {
+  text-decoration: none;
+  color: #00a2d3;
+  border: 1px solid #00a2d3;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px #00a2d3;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  #languages {
+    padding: 2rem 1rem;
   }
-  
-  #languages-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 1rem;
+
+  .languages-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
   }
-  
-  .language {
-    width: 25%;
-    text-align: center;
-  }
-  
+
   .language img {
-    width: 25%;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
   }
+}

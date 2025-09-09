@@ -3,7 +3,7 @@ import './Intro.css';
 import AnimatedSection from './AnimatedSection';
 
 const Intro = () => (
-  <AnimatedSection title="Welcome to my Portfolio 👋">
+  <AnimatedSection title="My name is Enock Muteti">
     <div className="intro-bg">
       <img src="images/profile3.jpeg" alt="profile" />
     </div>

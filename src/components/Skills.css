@@ -1,16 +1,15 @@
-/* Raised top-side effect */
 #skills {
   padding: 4rem 5%;
   background-color: transparent;
-  box-shadow: 0 -10px 30px rgba(0, 162, 211, 0.3); /* Raised from top */
+  box-shadow: 0 -10px 30px rgba(0, 162, 211, 0.25);
   border-radius: 20px;
   display: flex;
   justify-content: center;
   position: relative;
   z-index: 1;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
 }
 
-/* Container for layout */
 .skills-container {
   width: 100%;
   max-width: 1000px;
@@ -19,7 +18,6 @@
   align-items: flex-end;
 }
 
-/* Header */
 .skills-header {
   width: 100%;
   text-align: right;
@@ -27,46 +25,59 @@
 }
 
 .skills-header h2 {
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #00a2d3;
+  letter-spacing: 0.5px;
 }
 
-/* Skills layout */
 #skills-content {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
-  justify-content: flex-end;
   width: 100%;
 }
 
 .skill {
-  width: 280px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 6px 16px rgba(0, 162, 211, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Icon + Title */
+.skill:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 162, 211, 0.2);
+}
+
 .skill-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.1rem;
+  color: #fff;
 }
 
 .skill-icon {
-  font-size: 1.5rem;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  margin-right: 0.5rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 162, 211, 0.2);
 }
 
 .skill-title {
   text-align: right;
   flex: 1;
   padding-left: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #cef2fd;
 }
 
-/* Progress bar container */
 .skill-progress {
   background-color: rgb(3, 11, 17);
   width: 100%;
@@ -74,11 +85,11 @@
   height: 1.5rem;
   position: relative;
   overflow: hidden;
+  margin-top: 0.5rem;
 }
 
-/* Alicia blue progress bar */
 .skill-bar {
-  background-color: #cef2fd;
+  background: linear-gradient(90deg, #00a2d3, #cef2fd);
   height: 100%;
   border-radius: 20px;
   position: relative;
@@ -86,12 +97,12 @@
   align-items: center;
   justify-content: flex-end;
   padding-right: 0.5rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #031b2f;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  transition: width 0.6s ease;
 }
 
-/* Footer button */
 .skills-footer {
   margin-top: 2rem;
   align-self: flex-end;
@@ -101,17 +112,17 @@
   text-decoration: none;
   color: #00a2d3;
   border: 1px solid #00a2d3;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: box-shadow 0.3s ease;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
-  box-shadow: 0 0 10px #00a2d3;
+  box-shadow: 0 0 14px #00a2d3;
+  transform: translateY(-2px);
 }
 
-/* Responsive layout */
 @media (max-width: 768px) {
   #skills {
     padding: 2rem 1rem;
@@ -123,7 +134,7 @@
   }
 
   #skills-content {
-    justify-content: center;
+    grid-template-columns: 1fr;
   }
 
   .skill-title {

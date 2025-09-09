@@ -3,12 +3,36 @@ import "./Skills.css";
 import AnimatedSection from "./AnimatedSection";
 
 const skillData = [
-  { title: "🧑‍💻 Technical Skills", percent: 95 },
-  { title: "🕸️ Web Development", percent: 90 },
-  { title: "🌐 Networking and systems", percent: 85 },
-  { title: "⚙️ Technologies", percent: 88 },
-  { title: "📂 Projects", percent: 92 },
-  { title: "🧠 Soft skills", percent: 80 },
+  {
+    title: "Technical Skills",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    percent: 95
+  },
+  {
+    title: "Web Development",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    percent: 90
+  },
+  {
+    title: "Networking and Systems",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+    percent: 85
+  },
+  {
+    title: "Technologies",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    percent: 88
+  },
+  {
+    title: "Projects",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    percent: 92
+  },
+  {
+    title: "Soft Skills",
+    icon: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+    percent: 80
+  }
 ];
 
 const Skills = () => (
@@ -19,13 +43,11 @@ const Skills = () => (
           <h2>My Core Competencies</h2>
         </div>
         <div id="skills-content">
-          {skillData.map(({ title, percent }, i) => (
+          {skillData.map(({ title, icon, percent }, i) => (
             <div className="skill" key={i}>
               <div className="skill-top">
-                <span className="skill-icon">{title.split(" ")[0]}</span>
-                <span className="skill-title">
-                  {title.split(" ").slice(1).join(" ")}
-                </span>
+                <img src={icon} alt={title} className="skill-icon" />
+                <span className="skill-title">{title}</span>
               </div>
               <div className="skill-progress">
                 <div className="skill-bar" style={{ width: `${percent}%` }}>
@@ -36,9 +58,7 @@ const Skills = () => (
           ))}
         </div>
         <div className="skills-footer">
-          <a href="Skills.html" className="btn">
-            View Applications
-          </a>
+          <a href="Skills.html" className="btn">View Applications</a>
         </div>
       </div>
     </section>
