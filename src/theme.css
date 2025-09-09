@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(23, 51, 70);
+    color: aliceblue;
+    font-family: cursive;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }

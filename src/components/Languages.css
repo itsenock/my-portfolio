@@ -1,0 +1,22 @@
+#languages {
+    padding: 2rem;
+    box-shadow: 5px 5px 1px #00a2d3;
+    border-radius: 0 0 0 80%;
+  }
+  
+  #languages-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .language {
+    width: 25%;
+    text-align: center;
+  }
+  
+  .language img {
+    width: 25%;
+    border-radius: 50%;
+  }

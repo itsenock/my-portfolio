@@ -1,0 +1,30 @@
+#contacts {
+  padding: 2rem;
+}
+
+#contacts-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.icon {
+  width: 25%;
+  text-align: center;
+}
+
+.icon img {
+  border-radius: 50%;
+  height: 10vh;
+  object-fit: cover;
+}
+
+#contacts a {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: lighter;
+  font-size: medium;
+  color: #00a2d3;
+  text-decoration: none;
+}

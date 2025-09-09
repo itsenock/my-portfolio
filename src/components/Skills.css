@@ -1,0 +1,140 @@
+/* Raised top-side effect */
+#skills {
+  padding: 4rem 5%;
+  background-color: transparent;
+  box-shadow: 0 -10px 30px rgba(0, 162, 211, 0.3); /* Raised from top */
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Container for layout */
+.skills-container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Header */
+.skills-header {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+.skills-header h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Skills layout */
+#skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.skill {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Icon + Title */
+.skill-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.skill-icon {
+  font-size: 1.5rem;
+}
+
+.skill-title {
+  text-align: right;
+  flex: 1;
+  padding-left: 0.5rem;
+}
+
+/* Progress bar container */
+.skill-progress {
+  background-color: rgb(3, 11, 17);
+  width: 100%;
+  border-radius: 20px;
+  height: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Alicia blue progress bar */
+.skill-bar {
+  background-color: #cef2fd;
+  height: 100%;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.5rem;
+  font-weight: bold;
+  color: #031b2f;
+  font-size: 0.9rem;
+}
+
+/* Footer button */
+.skills-footer {
+  margin-top: 2rem;
+  align-self: flex-end;
+}
+
+.btn {
+  text-decoration: none;
+  color: #00a2d3;
+  border: 1px solid #00a2d3;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px #00a2d3;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  #skills {
+    padding: 2rem 1rem;
+    justify-content: center;
+  }
+
+  .skills-container {
+    align-items: center;
+  }
+
+  #skills-content {
+    justify-content: center;
+  }
+
+  .skill-title {
+    text-align: center;
+  }
+
+  .skills-footer {
+    align-self: center;
+  }
+
+  .skills-header {
+    text-align: center;
+  }
+}
