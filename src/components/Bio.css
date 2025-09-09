@@ -11,7 +11,7 @@
 #bio-img {
   width: 30vw;
   max-width: 300px;
-  height: auto;
+  height: 50vh;
   object-fit: cover;
   background: transparent;
   border: none;
@@ -47,10 +47,18 @@
     object-fit: cover;
     background: transparent;
     mix-blend-mode: normal;
-    
+
     /* Edge blending using mask */
-    mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 70%, transparent 100%);
-    -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 70%, transparent 100%);
+    mask-image: radial-gradient(
+      circle at center,
+      rgba(0, 0, 0, 1) 70%,
+      transparent 100%
+    );
+    -webkit-mask-image: radial-gradient(
+      circle at center,
+      rgba(0, 0, 0, 1) 70%,
+      transparent 100%
+    );
   }
 
   .bio-content {
