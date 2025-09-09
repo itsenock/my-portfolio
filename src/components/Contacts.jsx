@@ -10,11 +10,11 @@ const Contacts = () => (
         <div className="contact-methods">
           <div className="icon">
             <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" />
-            <a href="mailto:its.dev@example.com">its.dev@example.com</a>
+            <a href="mailto:mutetienock4@gmail.com">mutetienock4@gmail.com</a>
           </div>
           <div className="icon">
             <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" />
-            <a href="https://github.com/its-dev" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+            <a href="https://github.com/itsenock" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
           </div>
           <div className="icon">
             <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
@@ -26,15 +26,15 @@ const Contacts = () => (
           </div>
           <div className="icon">
             <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" />
-            <a href="https://twitter.com/its_dev" target="_blank" rel="noopener noreferrer">@its_dev</a>
+            <a href="https://x.com/its_enock254?t=9CZpzPtTuQD2jRpe1mIDtA&s=08" target="_blank" rel="noopener noreferrer">@its_enock254</a>
           </div>
           <div className="icon">
             <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
-            <a href="https://instagram.com/its.dev" target="_blank" rel="noopener noreferrer">@its.dev</a>
+            <a href="https://www.instagram.com/its_e.n.o.c.k_?utm_source=qr&igsh=MWNucTF5b2s3OWNx" target="_blank" rel="noopener noreferrer">@its_e.n.o.c.k_</a>
           </div>
           <div className="icon">
             <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
-            <a href="https://facebook.com/its.dev" target="_blank" rel="noopener noreferrer">Facebook Page</a>
+            <a href="https://www.facebook.com/profile.php?id=100068887042246" target="_blank" rel="noopener noreferrer">Facebook Page</a>
           </div>
           <div className="icon">
             <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
@@ -44,7 +44,7 @@ const Contacts = () => (
 
         {/* Contact Form */}
         <form
-          action="https://formspree.io/f/yourFormID"
+          action="https://formspree.io/f/meooplbp"
           method="POST"
           className="contact-form"
         >

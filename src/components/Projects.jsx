@@ -1,32 +1,43 @@
-import React from 'react';
-import './Projects.css';
-import AnimatedSection from './AnimatedSection';
+import React from "react";
+import "./Projects.css";
+import AnimatedSection from "./AnimatedSection";
 
 const projectData = [
   {
-    title: 'Portfolio Website',
-    image: 'images/profile4.jpeg',
-    description: 'A sleek, scroll-animated React portfolio with modular components, typewriter effects, and layered UI polish.',
-    link: 'https://yourportfolio.com'
+    title: "Portfolio Website",
+    image: "public/images/projects/portfoliowebsite.png",
+    description:
+      "A sleek, scroll-animated React portfolio with modular components, typewriter effects, and layered UI polish.",
+    link: "https://itsenock.vercel.app/",
   },
   {
-    title: 'Network Topology Simulation',
-    image: 'images/profile2.jpeg',
-    description: 'An enterprise-grade simulation of dynamic routing setups using Cisco Packet Tracer and advanced subnetting.',
-    link: 'https://topology-sim.com'
+    title: "movie application",
+    image: "images/projects/movieapp.png",
+    description:
+      "Designed to deliver an immersive user experience, the site features real-time movie data, interactive UI elements, and layered animations that elevate browsing into a visual journey.",
+    link: "https://eno-hub.vercel.app/",
   },
   {
-    title: 'Cybersecurity Dashboard',
-    image: 'https://images.unsplash.com/photo-1605902711622-cfb43c4437d2?auto=format&fit=crop&w=800&q=80',
-    description: 'A real-time threat monitoring dashboard with visual analytics, alert triggers, and secure authentication layers.',
-    link: 'https://cyberdash.io'
+    title: "ecommerce web application",
+    image: "images/projects/home.jpeg",
+    description:
+      "designed to empower users to buy and sell products seamlessly. Built with ReactJS and backed by a secure, scalable backend, the site combines intuitive navigation, real-time listings, and interactive UI elements to deliver a premium marketplace experience.",
+    link: "https://campus-market-six.vercel.app/",
   },
   {
-    title: 'Responsive UI Library',
-    image: 'https://images.unsplash.com/photo-1618005198919-d3d4b5c3f3f3?auto=format&fit=crop&w=800&q=80',
-    description: 'A custom-built UI component library with responsive grids, scroll-triggered animations, and reusable styles.',
-    link: 'https://ui-library.dev'
-  }
+    title: "unity connect(donation website)",
+    image: "images/projects/unityconnect.png",
+    description:
+      "built to connect compassionate donors with meaningful causes. Developed using ReactJS and styled with modular CSS, the platform emphasizes clarity, trust, and ease of use—ensuring that every visitor feels confident and inspired to contribute.",
+    link: "https://unity-ecru-theta.vercel.app/home",
+  },
+  {
+    title: "sales mangement system",
+    image: "images/projects/salesman.png",
+    description:
+      "a full-stack sales management system designed to streamline product tracking, customer engagement, and revenue analytics",
+    link: "https://drone-rho-five.vercel.app/",
+  },
 ];
 
 const Projects = () => (
@@ -42,7 +53,12 @@ const Projects = () => (
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               {project.link && (
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
                   View Project →
                 </a>
               )}
@@ -51,7 +67,9 @@ const Projects = () => (
         ))}
       </div>
       <div className="projects-footer">
-        <a href="Projects.html" className="btn">Explore More</a>
+        <a href="Projects.html" className="btn">
+          Explore More
+        </a>
       </div>
     </section>
   </AnimatedSection>
