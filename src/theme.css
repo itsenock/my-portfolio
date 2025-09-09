@@ -2,7 +2,7 @@
 .dark-theme {
   --bg-color: #010d1a;
   --text-color: #cef2fd;
-  --nav-bg:#010d1a;
+  --nav-bg: #010d1a;
   --nav-text: #cef2fd;
   --menu-bg: #010d1a;
   --icon-filter: brightness(100%);
@@ -24,7 +24,7 @@ body {
   padding: 0;
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-family: cursive;
+  font-family: "Inter", "Segoe UI", "Roboto", sans-serif;
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
