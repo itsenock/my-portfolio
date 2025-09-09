@@ -5,7 +5,7 @@ import AnimatedSection from "./AnimatedSection";
 const projectData = [
   {
     title: "Portfolio Website",
-    image: "public/images/projects/portfoliowebsite.png",
+    image: "images/projects/portfoliowebsite.png",
     description:
       "A sleek, scroll-animated React portfolio with modular components, typewriter effects, and layered UI polish.",
     link: "https://itsenock.vercel.app/",
