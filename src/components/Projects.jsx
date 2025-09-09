@@ -29,7 +29,7 @@ const projectData = [
     image: "images/projects/unityconnect.png",
     description:
       "built to connect compassionate donors with meaningful causes. Developed using ReactJS and styled with modular CSS, the platform emphasizes clarity, trust, and ease of use—ensuring that every visitor feels confident and inspired to contribute.",
-    link: "https://unity-ecru-theta.vercel.app/home",
+    link: "https://unity-ecru-theta.vercel.app/",
   },
   {
     title: "sales mangement system",
