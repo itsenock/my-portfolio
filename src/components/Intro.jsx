@@ -17,7 +17,9 @@ const Intro = () => (
           In this space, you'll find a showcase of my projects, skills, and technical explorations.<br />
           Whether it's behind-the-scenes logic or front-end elegance, I thrive on solving problems and pushing boundaries.
         </p>
-        <button type="button">Download Resume</button>
+        <a href="/resume.pdf" download>
+          <button type="button">Download Resume</button>
+        </a>
       </div>
     </section>
   </AnimatedSection>
