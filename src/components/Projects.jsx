@@ -11,28 +11,28 @@ const projectData = [
     link: "https://itsenock.vercel.app/",
   },
   {
-    title: "movie application",
+    title: "The ENO HUB",
     image: "images/projects/movieapp.png",
     description:
       "Designed to deliver an immersive user experience, the site features real-time movie data, interactive UI elements, and layered animations that elevate browsing into a visual journey.",
     link: "https://eno-hub.vercel.app/",
   },
   {
-    title: "ecommerce web application",
+    title: "Campus Market",
     image: "images/projects/home.jpeg",
     description:
       "designed to empower users to buy and sell products seamlessly. Built with ReactJS and backed by a secure, scalable backend, the site combines intuitive navigation, real-time listings, and interactive UI elements to deliver a premium marketplace experience.",
     link: "https://campus-market-six.vercel.app/",
   },
   {
-    title: "unity connect(donation website)",
+    title: "Unity Connect",
     image: "images/projects/unityconnect.png",
     description:
       "built to connect compassionate donors with meaningful causes. Developed using ReactJS and styled with modular CSS, the platform emphasizes clarity, trust, and ease of use—ensuring that every visitor feels confident and inspired to contribute.",
     link: "https://unity-ecru-theta.vercel.app/",
   },
   {
-    title: "sales mangement system",
+    title: "Drone Shoe collection",
     image: "images/projects/salesman.png",
     description:
       "a full-stack sales management system designed to streamline product tracking, customer engagement, and revenue analytics",
