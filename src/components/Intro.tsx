@@ -102,7 +102,7 @@ const Intro: React.FC = () => {
             transition={{ delay: 0.6 }}
             className={`text-xl md:text-2xl mb-8 ${isDark ? 'text-gray-300' : 'text-gray-700'}`}
           >
-            Computer Scientist & Software Developer
+            AI Engineer,Software engineer & full Stack developer
           </motion.h2>
 
           {/* Description */}
@@ -126,7 +126,7 @@ const Intro: React.FC = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <motion.a
-              href="/Enock_Muteti.pdf"
+              href="/resume.pdf"
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

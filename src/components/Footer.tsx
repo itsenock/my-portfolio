@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
               <h3 className="text-2xl font-bold gradient-text mb-4">Enock Muteti</h3>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Computer Scientist & Software Developer crafting meaningful solutions 
+              A technologist crafting meaningful solutions 
               through clean, efficient code.
             </p>
           </motion.div>
